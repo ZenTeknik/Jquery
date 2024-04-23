@@ -4,38 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery crash course | selectors</title>
-    <script src="https://www.youtube.com/watch?v=3nrLc_JOF7k"> </script>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        body{
-         font: size 17px; 
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
-          background: #f4f4f4;
-          line-height: 1.5em;
+        body {
+            font-size: 17px; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+            background: #f4f4f4;
+            line-height: 1.5em;
         }
-        header{
+        header {
             background: #033;
             color: #f4f4f4;
             padding: 20px;
             text-align: center;
-            border-bottom: 4px #000;
+            border-bottom: 4px solid #000; /* Add border style and color */
             margin-bottom: 10px ;
         }
-        #container{
-         width: 90%; 
-         margin:auto ;
-         padding :10px;
+        #container {
+            width: 90%; 
+            margin:auto ;
+            padding :10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Jquery Crash course </h1>
+        <h1>Jquery Crash course</h1>
     </header>
     <div id="container">
-
+        <h1 id="heading1">Heading one</h1>
+        <p id="para1">
+            You can also set up custom shortcuts or snippets in your code editor to insert HTML elements quickly. Check the documentation or preferences/settings of your editor to see if this feature is available.
+        </p>
+    </div>
+    <div id="container">
+        <h1 id="heading2">Heading Two</h1>
+        <p id="para2">
+            You can also set up custom shortcuts or snippets in your code editor to insert HTML elements quickly. Check the documentation or preferences/settings of your editor to see if this feature is available.
+        </p>
     </div>
     <script>
-
+        //$("h1").hide(); // to hide the headings (H1 elements)
+        //$("h1#heading1").hide(); // just to remve the heading 1 
+        $("h1#heading2").hide();  // just to remove the heading two
     </script>
 </body>
 </html>
