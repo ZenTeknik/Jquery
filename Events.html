@@ -37,6 +37,7 @@
         <h3>Mouse Events </h3>
         <button id="btn1">Button 1</button>
         <button id="btn2">Button 2</button>
+        <p class="para1">Have you ever felt like you're speaking a different language, even though you're using the same words?</p>
     </div>
 
 
@@ -44,9 +45,10 @@
         // Ensure jQuery code executes after the DOM is fully loaded
         $(document).ready(function() {
             // Add event listener to button with id 'btn1'
-          // tp add alert message for pressing the button  1
+            // To add an alert message for pressing button 1
             $('#btn1').click(function(){
                 alert('Button Clicked!');
+                $('.para1').hide(); 
             });
         });
     </script>
