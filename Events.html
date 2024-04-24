@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery crash course | selectors</title>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-size: 17px; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header {
+            background: #033;
+            color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #000; /* Add border style and color */
+            margin-bottom: 10px ;
+        }
+        #container {
+            width: 90%; 
+            margin:auto ;
+            padding :10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jquery Crash course</h1>
+    </header>
+  
+    <div id="container">
+        <h3>Mouse Events </h3>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+    </div>
+
+
+    <script>
+        // Ensure jQuery code executes after the DOM is fully loaded
+        $(document).ready(function() {
+            // Add event listener to button with id 'btn1'
+          // tp add alert message for pressing the button  1
+            $('#btn1').click(function(){
+                alert('Button Clicked!');
+            });
+        });
+    </script>
+</body>
+</html>
